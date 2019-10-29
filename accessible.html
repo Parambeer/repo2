@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Accessibility test</title>
+        <style>
+            body {
+                font-size: 25px;
+            }
+            li a:hover, li a:focus {
+                background: yellow;
+                color: #000000;
+            }
+            li a:link, li a:visited {
+                transition: background-color 0.25s linear;
+            }
+            :focus {
+                outline: -webkit-focus-ring-color auto 5px;
+            }
+                    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href=# >Menu 1</a></li>
+                <li><a href=# >Menu 2</a></li>
+                <li><a href=# >Menu 3</a>
+                    <ul>
+                        <li><a href=# >Submenu 1</a></li>
+                        <li><a href=# >Submenu 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure mollitia corrupti ullam atque ratione, cupiditate cum expedita facilis dolor delectus id cumque animi. Excepturi cumque dicta, pariatur sed soluta ipsam?</p>
+            <div>
+                <a href="#">Go to Link</a>
+            </div>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" value="" name="name"><br>
+                <label for="name">Email:</label>
+                <input type="email" value=""><br>
+                <label for="name">Password:</label>
+                <input type="password" value="">
+                <input type="submit" value="Submit">
+            </form>
+            <div>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        <p>Your browser does not support iframes.</p>
+                      </iframe>
+            </div>
+            <input type="datetime-local" name="" id="">
+        </section>
+    </body>
+</html>
